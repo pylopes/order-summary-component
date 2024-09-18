@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --font-family: "Red Hat Display", sans-serif;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--desaturated-blue);
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+main {
+    font-family: var(--font-family);
+    background-color: var(--white);
+    max-width: 320px;
+    border-radius: 15px;
+}
+
+main > img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    gap: 16px;
+}
+
+.info > p {
+    letter-spacing: -0.5px;
+    max-width: 90%;
+}
+
+.plan {
+    display: flex;
+    background-color: var(--very-pale-blue);
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%
+}
+
+.plan > a {
+    color: var(--bright-blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.plan > a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.itens-plan-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-payment {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    font-family: var(--font-family);
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: 0px 10px 8px var(--pale-blue);
+}
+
+.btn-payment:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+    border: 0;
+    background-color: var(--white);
+    font-family: var(--font-family);
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.btn-cancel:hover {
+    color: var(--black);
+    cursor: pointer;
+}
+
+@media (width > 600px) {
+    body {
+        height: 100vh;
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    main {
+        max-width: 350px;
+    }
+
+    .info > p {
+        max-width: 100%;
+    }
+}
