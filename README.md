@@ -10,7 +10,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [Order summary card solution]()
+- Live Site URL: [Order summary card solution](https://pylopes.github.io/order-summary-component/)
 
 ### Built with
 
